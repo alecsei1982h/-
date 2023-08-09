@@ -202,3 +202,5 @@ class TestValidRegistrationRT:
             Invalid_Data.fake_password)
         self.driver.find_element(By.XPATH, RTRegistrationLocators.LOCATOR_RT_REGISTRATION_BUTTON_SUBMIT).click()
         assert self.driver.find_element(By.XPATH, RTRegistrationsAllerts.LOCATOR_RT_REGISTRATION_ALLERTS_ERROR)
+
+# python -m pytest -v --driver Chrome --driver-path /projects/chromedriver.exe test_rt_authorization.py *--alluredir reports*
